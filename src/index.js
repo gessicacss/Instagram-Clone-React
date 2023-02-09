@@ -1,4 +1,4 @@
 import reactDom from "react-dom";
-import Header from './topo/Header'
+import App from './components/App'
 
-reactDom.render(<Header />, document.querySelector('.root'));
+reactDom.render(<App />, document.querySelector('.root'));
