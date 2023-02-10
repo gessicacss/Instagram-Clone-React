@@ -11,7 +11,7 @@ export default function UserInfo(props){
     }
 
     return (
-        <div class="acc-info">
+        <div className="acc-info">
         <img data-test="profile-image" src={newImg ? newImg : oldImg} onClick={changeIcon} alt={oldImg}/>
         <div>
             <h1 data-test="name">{userName ? userName : oldUserName}</h1>

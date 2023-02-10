@@ -1,12 +1,12 @@
 export default function LeftSide() {
     return (
         <div>
-            <a href="#">
+            <a href="#home">
                 <ion-icon name="logo-instagram"></ion-icon>
             </a>
-            <img src="./assets/img/logo.png"/>
-            <a href="#">
-                <ion-icon name="paper-plane-outline" class="mobile"></ion-icon>
+            <img src="./assets/img/logo.png" alt="logo instagram"/>
+            <a href="#home">
+                <ion-icon name="paper-plane-outline" className="mobile"></ion-icon>
             </a>
         </div>
     );

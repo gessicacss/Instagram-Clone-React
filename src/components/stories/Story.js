@@ -1,9 +1,9 @@
 export default function Story(props){
     const {image, name} = props;
     return(
-        <div class="profile">
-        <a href="#">
-            <div class="border">
+        <div className="profile">
+        <a href="#home">
+            <div className="border">
                 <img src={image} alt={name}/>
             </div>
             <p>{name}</p>

@@ -4,14 +4,14 @@ import User from "./User";
 
 export default function Sidebar(){
     return (
-        <aside class="sidebar">
-            <div class="sidebar-content">
+        <aside className="sidebar">
+            <div className="sidebar-content">
                 <User />
-                <div class="for-you">
+                <div className="for-you">
                     <p>Sugestões para você</p>
-                    <a href="#">Ver tudo</a>
+                    <a href="#home">Ver tudo</a>
                 </div>
-                <div class="suggestions">
+                <div className="suggestions">
                     <Suggestions />
                 </div>
                 <Credits />
