@@ -3,6 +3,8 @@ import { useState } from "react";
 export default function IndividualPost(props){
         const [like, setLike] = useState(false);
         const [save, setSave] = useState(false);
+        const [showHeart, setShowHeart] = useState(false);
+        const halfASecond = 500;
 
         function savePost() {
             setSave(saved => !saved);
@@ -14,6 +16,10 @@ export default function IndividualPost(props){
 
         function likeImg(){
             setLike(true);
+            setShowHeart(true);
+            setTimeout(() => {
+              setShowHeart(false);
+            }, halfASecond);
         }
     
         return(
@@ -25,6 +31,7 @@ export default function IndividualPost(props){
                 </div>
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
+            <ion-icon onClick={likeImg} class={showHeart ? "img-like" : "hide"} name={"heart"}></ion-icon>
             <img data-test="post-image" onDoubleClick={likeImg} src={props.postImage} alt={props.name}/>
             <div class="bottom">
             <div class="interact">

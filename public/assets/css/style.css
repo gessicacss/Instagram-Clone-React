@@ -165,6 +165,30 @@ body {
     height: 612px;
     }
     
+    .img-like {
+        position:absolute;
+        top: 180px;
+        right:150px;
+        z-index: 1;
+        width:50%;
+        height:50%;
+        color:white;
+        animation: img-like 0.3s ease-in-out;
+    }
+
+    @keyframes img-like {
+        0% {
+            transform: scale(0.2);
+          }
+          50% {
+            transform: scale(1);
+          }
+    }
+
+    .hide {
+        display:none;
+    }
+    
     .top {
     height: 50px;
     display: flex;
