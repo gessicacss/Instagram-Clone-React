@@ -9,5 +9,5 @@ export default function LeftSide() {
                 <ion-icon name="paper-plane-outline" class="mobile"></ion-icon>
             </a>
         </div>
-    )
+    );
 }

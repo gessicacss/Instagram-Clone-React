@@ -14,5 +14,5 @@ export default function RightSide(){
                     <ion-icon name="person-outline"></ion-icon>
                 </a>
         </nav>
-    )
+    );
 }

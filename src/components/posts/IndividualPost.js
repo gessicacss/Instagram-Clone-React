@@ -46,10 +46,10 @@ export default function IndividualPost(props){
             </div>
             <div class="description">
                 <img src={icon} alt={liked}/>
-                <p>Curtido por 
+                <p>Curtido por
                     <span><a href="#"> {liked} </a></span>
-                     e 
-                     <span> outras 
+                    e
+                    <span> outras
                     <span data-test="likes-number"> {!like ? likes : likes + 1} </span>
                     pessoas</span></p>
             </div>

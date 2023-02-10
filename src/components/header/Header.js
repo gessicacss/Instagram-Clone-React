@@ -1,5 +1,5 @@
 import LeftSide from "./LeftSide";
-import RightSide from "./RightSide"
+import RightSide from "./RightSide";
 
 
 export default function Header(){
@@ -11,5 +11,5 @@ export default function Header(){
             <RightSide />
         </div>
     </header>
-    )
+    );
 }
