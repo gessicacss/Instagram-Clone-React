@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export default function IndividualPost(props){
+        const {image, name, postImage, icon, liked, likes, desc} = props;
         const [like, setLike] = useState(false);
         const [save, setSave] = useState(false);
         const [showHeart, setShowHeart] = useState(false);
@@ -9,7 +10,7 @@ export default function IndividualPost(props){
         function savePost() {
             setSave(saved => !saved);
         }
-    
+
         function likePost(){
             setLike(liked => !liked);
         }
@@ -21,18 +22,19 @@ export default function IndividualPost(props){
               setShowHeart(false);
             }, halfASecond);
         }
-    
+
+
         return(
         <div data-test="post" class="post">
             <div class="top">
             <div class="account">
-                    <img src={props.image} alt={props.name}/>
-                    {props.name}
+                    <img src={image} alt={name}/>
+                    {name}
                 </div>
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
             <ion-icon onClick={likeImg} class={showHeart ? "img-like" : "hide"} name={"heart"}></ion-icon>
-            <img data-test="post-image" onDoubleClick={likeImg} src={props.postImage} alt={props.name}/>
+            <img data-test="post-image" onDoubleClick={likeImg} src={postImage} alt={name}/>
             <div class="bottom">
             <div class="interact">
                 <div>
@@ -43,13 +45,18 @@ export default function IndividualPost(props){
                     <ion-icon data-test="save-post" name={save ? "bookmark" : "bookmark-outline"} onClick={savePost}></ion-icon>
             </div>
             <div class="description">
-                <img src={props.icon} alt={props.liked}/>
-                <p>Curtido por <span><a href="#">{props.liked}</a></span> e <span>outras <span data-test="likes-number">{!like ? props.likes : props.likes + 1} </span>pessoas</span></p>
+                <img src={icon} alt={liked}/>
+                <p>Curtido por 
+                    <span><a href="#"> {liked} </a></span>
+                     e 
+                     <span> outras 
+                    <span data-test="likes-number"> {!like ? likes : likes + 1} </span>
+                    pessoas</span></p>
             </div>
             <div class="desc">
-                <p><span><a href='#'>{props.name}</a></span> {props.desc}</p>
+                <p><span><a href='#'>{name}</a></span> {desc}</p>
             </div>
         </div>
      </div>
-        )
+        );
     }

@@ -6,5 +6,5 @@ export default function Credits(){
             Idioma</a>
             <p>© 2021 INSTAGRAM DO FACEBOOK</p>
         </div>
-    )
+    );
 }

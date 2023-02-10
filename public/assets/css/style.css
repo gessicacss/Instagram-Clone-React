@@ -39,6 +39,8 @@ header {
 .menu div img {
     border-left: 1px solid #dbdbdb;
     padding-left: 10px;
+    width: 103px;
+    height: 29px;
 }
     
 .menu div {
@@ -62,11 +64,6 @@ input {
     border-radius: 3px;
     background: #fafafa;
     outline: none;
-}
-    
-.menu div img {
-    width: 103px;
-    height: 29px;
 }
     
 .mobile {

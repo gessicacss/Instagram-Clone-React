@@ -1,3 +1,5 @@
+import Story from "./Story";
+
 export default function Stories(){
     const imgs = [
         {image:"./assets/img/vck.png", name:"vickeey.m"},
@@ -11,8 +13,8 @@ export default function Stories(){
         {image:"./assets/img/husky.jpg", name:"moomoo"},
         {image:"./assets/img/byeol.jpg", name:"byeolie"},
         {image:"./assets/img/snowman.jpg", name:"achahakyeon"}
-    ]
-    
+    ];
+
     return(
         <div class="stories">
         <div class="arrow">
@@ -20,19 +22,5 @@ export default function Stories(){
         </div>
         {imgs.map(u => <Story image={u.image} name={u.name} />)}
         </div>
-    )
-}
-
-function Story(props){
-    const {image, name} = props;
-    return(
-        <div class="profile">
-        <a href="#">
-            <div class="border">
-                <img src={image} alt={name}/>
-            </div>
-            <p>{name}</p>
-        </a>
-        </div>
-    )
+    );
 }

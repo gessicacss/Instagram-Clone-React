@@ -1,21 +1,22 @@
 export default function UserInfo(props){
+    const {newImg, userName, oldUserName, oldImg, setUserName, setNewImg} = props;
     function changeName(){
         const newUser = prompt('Qual seu nome de usuário?');
-        props.setUserName(newUser);
+        setUserName(newUser);
     }
 
     function changeIcon(){
         const newIcon = prompt('Qual imagem quer colocar?');
-        props.setNewImg(newIcon);
+        setNewImg(newIcon);
     }
 
     return (
-        <div class="acc-info"> 
-        <img data-test="profile-image" src={props.newImg ? props.newImg : props.oldImg} onClick={changeIcon} alt={props.oldImg}/>
+        <div class="acc-info">
+        <img data-test="profile-image" src={newImg ? newImg : oldImg} onClick={changeIcon} alt={oldImg}/>
         <div>
-            <h1 data-test="name">{props.userName ? props.userName : props.oldUserName}</h1>
+            <h1 data-test="name">{userName ? userName : oldUserName}</h1>
             <ion-icon data-test="edit-name" name="pencil" onClick={() => changeName()}></ion-icon>
         </div>
     </div>
-    )
+    );
 }

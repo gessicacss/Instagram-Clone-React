@@ -1,4 +1,4 @@
-import IndividualSug from "./IndividualSug"
+import IndividualSug from "./IndividualSug";
 
 export default function Suggestions(){
     const list = [
@@ -6,9 +6,9 @@ export default function Suggestions(){
         {image:"./assets/img/bae.jpg", name:"shotsbybae", phrase:"Segue você"},
         {image:"./assets/img/evwoo.jpg", name:"everyone_woo", phrase:"Seguido por vickeey.m"},
         {image:"./assets/img/shaggy.jpg", name:"shaggy", phrase:"Sugestões para você"}
-    ]
+    ];
 
     return (
         list.map((u) => <IndividualSug image={u.image} name={u.name} phrase={u.phrase}/>)
-    )
+    );
 }

@@ -12,7 +12,7 @@ export default function Post(){
         iconLiked:"./assets/img/evwoo.jpg"
 
     },
-        {name: "mery", 
+        {name: "mery",
         icon: "./assets/img/natal.jpg",
         image:"./assets/img/cat.jpg",
         desc:"Coisinha mais fofa",
@@ -20,7 +20,7 @@ export default function Post(){
         likes:20,
         iconLiked:"./assets/img/doggo.jpg"
 },
-        {name: "beencantstop", 
+        {name: "beencantstop",
         icon: "./assets/img/icon.jpg",
         image:"./assets/img/snowman.jpg",
         desc:"december has come ❄️",
@@ -28,11 +28,11 @@ export default function Post(){
         likes:100,
         iconLiked:"./assets/img/snowman.jpg"
     }
-    ]
+    ];
 
     return (
-        users.map((post) => <IndividualPost image={post.icon} name={post.name} liked={post.likedBy} likes={post.likes} 
+        users.map((post) => <IndividualPost image={post.icon} name={post.name} liked={post.likedBy} likes={post.likes}
         desc={post.desc} postImage={post.image} icon={post.iconLiked}/>
         )
-    )
+    );
 }

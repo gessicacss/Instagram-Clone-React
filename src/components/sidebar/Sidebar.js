@@ -1,6 +1,6 @@
-import Credits from "./Credits"
-import Suggestions from "./Suggestions"
-import User from "./User"
+import Credits from "./Credits";
+import Suggestions from "./Suggestions";
+import User from "./User";
 
 export default function Sidebar(){
     return (
@@ -17,5 +17,5 @@ export default function Sidebar(){
                 <Credits />
             </div>
         </aside>
-    )
+    );
 }
