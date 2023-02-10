@@ -1,17 +1,17 @@
 body {
     font-family: "Roboto", sans-serif;
     background: #fafafa;
-    }
+}
     
-    ion-icon{
+ion-icon{
         visibility: visible;
-    }
+}
 
-    * {
+* {
     box-sizing: border-box;
-    }
+}
     
-    header {
+header {
     background: #fff;
     width: 100%;
     height: 54px;
@@ -24,68 +24,68 @@ body {
     left: 0;
     
     z-index: 1;
-    }
+}
     
-    .menu {
+.menu {
     width: 953px;
     display: flex;
     justify-content: space-between;
-    }
+}
     
-    .menu ion-icon {
+.menu ion-icon {
     font-size: 23px;
-    }
+}
     
-    .menu div img {
+.menu div img {
     border-left: 1px solid #dbdbdb;
     padding-left: 10px;
-    }
+}
     
-    .menu div {
+.menu div {
     width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+}
     
-    nav {
+nav {
     width: 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
+}
     
-    input {
+input {
     width: 215px;
     text-align: center;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     background: #fafafa;
     outline: none;
-    }
+}
     
-    .menu div img {
+.menu div img {
     width: 103px;
     height: 29px;
-    }
+}
     
-    .mobile {
+.mobile {
     display: none;
-    }
+}
     
-    main {
+main {
     margin: 88px auto;
     display: flex;
     justify-content: center;
-    }
+}
     
-    .content {
+.content {
     width: 614px;
     display: flex;
     flex-direction: column;
-    }
+}
     
-    .stories {
+.stories {
     background: white;
     width: 614px;
     height: 118px;
@@ -97,15 +97,15 @@ body {
     border-radius: 3px;
     padding:15px;
     gap:12px;
-    }
+}
     
-    .profile {
+.profile {
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+}
     
-    .border {
+.border {
     width: 66px;
     height: 66px;
     background-image: url('../img/stories_background.jpg');
@@ -114,9 +114,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+}
     
-    .profile p {
+.profile p {
     font-size: 12px;
     font-weight: 400;
     text-align: center;
@@ -125,15 +125,15 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left:0;
-    }
+}
     
-    .profile img {
+.profile img {
     width: 56px;
     height: 56px;
     border-radius: 28px;
-    }
+}
     
-    .arrow {
+.arrow {
     display: flex;
     position: absolute;
     right: 10px;
@@ -143,13 +143,13 @@ body {
     /*border-radius: 50%;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.831);*/
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.831));
-    }
+}
     
-    .posts {
+.posts {
     width: 614px;
-    }
+}
     
-    .post {
+.post {
     width: 100%;
     background: white;
     border: 1px solid #dbdbdb;
@@ -158,14 +158,14 @@ body {
     overflow:hidden;
     text-overflow: ellipsis;
     position:relative;
-    }
+}
     
-    .post img {
+.post img {
     width: 612px;
     height: 612px;
-    }
+}
     
-    .img-like {
+.img-like {
         position:absolute;
         top: 180px;
         right:150px;
@@ -174,345 +174,324 @@ body {
         height:50%;
         color:white;
         animation: img-like 0.3s ease-in-out;
-    }
+}
 
-    @keyframes img-like {
+@keyframes img-like {
         0% {
             transform: scale(0.2);
-          }
+    
+        }
           50% {
             transform: scale(1);
-          }
-    }
-
-    .hide {
-        display:none;
-    }
     
-    .top {
+        }
+}
+
+.hide {
+        display:none;
+}
+    
+.top {
     height: 50px;
     display: flex;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
-    }
+}
     
-    .account {
+.account {
     display: flex;
     align-items: center;
     gap:10px;
-    }
+}
     
-    .account a {
+.account a {
     font-weight: 500;
     font-size: 14px;
-    }
+}
     
-    .account a:nth-child(2) {
+.account a:nth-child(2) {
     margin-left: 10px;
     line-height: 16px;
-    }
+}
     
-    .top img {
+.top img {
     width: 32px;
     height: 32px;
     border-radius: 16px;
-    }
+}
     
-    .bottom {
+.bottom {
     padding: 0 5px;
     margin-bottom:20px;
-    }
+}
     
-    .bottom span {
+.bottom span {
     font-weight: 500;
     color: #262626;
     margin-left: 0px;
-    }
+}
     
-    .interact {
+.interact {
     margin-top: 4px;
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
-    }
+}
 
-    .interact div{
+.interact div{
         display:flex;
         gap:5px;
     }
     
-    .interact ion-icon {
+.interact ion-icon {
     font-size: 18px;
     visibility: visible;
     cursor:pointer;
-    }
+}
     
-    .interact a:hover {
+.interact a:hover {
     color: #949494;
-    }
+}
     
-    .not-liked {
+.not-liked {
     color: black;
-    }
+}
     
-    .liked {
+.liked {
     color: red;
-    }
+}
     
-    .description {
+.description {
     display: flex;
     margin-top: 10px;
     align-items: center;
     padding: 0 6px;
-    }
+}
     
-    p {
+p {
     margin-left: 5px;
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    }
+}
     
-    .description img {
+.description img {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    }
+}
     
-    .desc {
+.desc {
     display: flex;
     margin-top: 10px;
     padding-left: 4px;
-    }
+}
     
-    .sidebar {
+.sidebar {
     width: 293px;
     margin: 22px 25px;
-    }
+}
     
-    .sidebar-content {
+.sidebar-content {
     width: 293px;
     position: fixed;
-    }
+}
     
-    .acc-info {
+.acc-info {
     width: 100px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
+}
     
-    .acc-info div {
+.acc-info div {
     margin-left: 16px;
     display:flex;
     gap:5px;
     align-items: center;
-    }
+}
 
-    .acc-info div ion-icon{
+.acc-info div ion-icon{
         font-size: 14px;
         padding-bottom:6px;
         cursor:pointer;
-        }
+
+}
     
-    a {
+a {
     text-decoration: none;
     color: inherit;
-    }
+}
     
-    .acc-info h1 {
+.acc-info h1 {
     color: #262626;
     font-size: 14px;
     font-weight: 500;
-    }
+}
     
-    .acc-info p {
+.acc-info p {
     font-size: 14px;
     line-height: 16px;
     color: #8e8e8e;
     margin-left: 0;
-    }
+}
     
-    .acc-info img {
+.acc-info img {
     width: 56px;
     height: 56px;
     border-radius: 28px;
     cursor:pointer;
-    }
+}
     
-    .for-you {
+.for-you {
     display: flex;
     justify-content: space-between;
-    }
+}
     
-    .for-you p {
+.for-you p {
     margin-left: 0;
     font-size: 12px;
     font-weight: 500;
     color: #8e8e8e;
     line-height: 14px;
-    }
+}
     
-    .for-you a {
+.for-you a {
     font-weight: 500;
     color: #262626;
     font-size: 12px;
-    }
+}
     
-    .sug-profile {
+.sug-profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+}
     
-    .sug-profile img {
+.sug-profile img {
     margin-right: 10px;
     cursor: pointer;
-    }
+}
     
-    .follow {
+.follow {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 15px auto;
-    }
+}
     
-    .follow img {
+.follow img {
     width: 32px;
     height: 32px;
     border-radius: 16px;
-    }
+}
     
-    .follow h2 {
+.follow h2 {
     color: #262626;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
-    }
+}
     
-    .follow span {
+.follow span {
     font-size: 12px;
     font-weight: 400;
     color: #8e8e8e;
     margin-left: 0;
-    }
+}
     
-    .follow div p {
+.follow div p {
     color: #8e8e8e;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     margin-left: 0;
     margin-top: 4px;
-    }
+}
     
-    .follow p {
+.follow p {
     color: #139ef2;
     font-weight: 500;
     font-size: 12px;
     margin-left: 0;
-    }
+}
     
-    .sidebar-footer a {
+.sidebar-footer a {
     font-size: 11px;
     font-weight: 400;
     line-height: 13px;
     color: #c7c7c7;
-    }
+}
     
-    .sidebar-footer p {
+.sidebar-footer p {
     font-size: 11px;
     font-weight: 400;
     line-height: 13px;
     color: #c7c7c7;
     margin-top: 20px;
     margin-left: 0;
-    }
-    
-    .bottom-menu {
-    display: none;
-    }
+}
     
     @media (max-width: 935px) {
     .sidebar {
-    display: none;
+        display: none;
     }
     .menu {
-    padding: 0 20px;
+        padding: 0 20px;
     }
     }
     
     @media (max-width: 614px) {
     .menu,
     .menu div,
-    main,
+        main,
     .content,
-    header,
+        header,
     .posts,
-    .post,
-    footer {
-    width: 100%;
+    .post{
+        width: 100%;
     }
     
     main {
     margin: 70px auto;
-    }
+}
     .mobile {
-    display: block;
+        display: block;
     }
-    
+        
     .menu nav,
     .menu input,
     .arrow {
-    display: none;
+        display: none;
     }
     
     .menu div img,
     .post {
-    border-left: none;
+        border-left: none;
     }
-    
+        
     .stories {
-    width: 100%;
-    background: none;
-    border: none;
-    height: 80px;
-    overflow-x: scroll;
-    margin-bottom: 15px;
+        width: 100%;
+        background: none;
+        border: none;
+        height: 80px;
+        overflow-x: scroll;
+        margin-bottom: 15px;
     }
-    
+        
     .stories::-webkit-scrollbar {
-    display: none;
+        display: none;
     }
-    
+        
     .post {
-    border-right: none;
+        border-right: none;
     }
-    
+        
     .post img:nth-child(2) {
-    width: 100%;
-    height: auto;
-    }
-    
-    .post video {
-    width: 100%;
-    height: auto;
-    }
-    
-    .bottom-menu {
-    background-color: #fff;
-    width: 100%;
-    height: 54px;
-    border: 1px solid #dbdbdb;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+        width: 100%;
+        height: auto;
     }
     }
     

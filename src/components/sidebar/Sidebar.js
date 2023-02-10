@@ -4,7 +4,7 @@ import User from "./User"
 
 export default function Sidebar(){
     return (
-        <sidebar class="sidebar">
+        <aside class="sidebar">
             <div class="sidebar-content">
                 <User />
                 <div class="for-you">
@@ -16,6 +16,6 @@ export default function Sidebar(){
                 </div>
                 <Credits />
             </div>
-        </sidebar>
+        </aside>
     )
 }
