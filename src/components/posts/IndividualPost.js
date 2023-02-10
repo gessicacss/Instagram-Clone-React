@@ -5,11 +5,11 @@ export default function IndividualPost(props){
         const [save, setSave] = useState(false);
 
         function savePost() {
-            setSave(current => !current);
+            setSave(saved => !saved);
         }
     
         function likePost(){
-            setLike(current => !current);
+            setLike(liked => !liked);
         }
 
         function likeImg(){

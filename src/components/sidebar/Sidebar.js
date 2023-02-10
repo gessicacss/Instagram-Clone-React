@@ -1,3 +1,4 @@
+import Credits from "./Credits"
 import Suggestions from "./Suggestions"
 import User from "./User"
 
@@ -13,6 +14,7 @@ export default function Sidebar(){
                 <div class="suggestions">
                     <Suggestions />
                 </div>
+                <Credits />
             </div>
         </sidebar>
     )
