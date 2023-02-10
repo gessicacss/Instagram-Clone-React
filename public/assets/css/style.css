@@ -431,16 +431,16 @@ a {
     margin-left: 0;
 }
     
-@media (max-width: 935px) {
+    @media (max-width: 935px) {
     .sidebar {
         display: none;
     }
     .menu {
         padding: 0 20px;
     }
-}
+    }
     
-@media (max-width: 614px) {
+    @media (max-width: 614px) {
     .menu,
     .menu div,
         main,
@@ -485,9 +485,10 @@ a {
     .post {
         border-right: none;
     }
-    .post img {
+
+    .post img:nth-child(2) {
         width: 100%;
         height: auto;
     }
-}
+    }
     
