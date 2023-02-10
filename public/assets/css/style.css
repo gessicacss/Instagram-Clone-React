@@ -160,10 +160,6 @@ body {
     height: 612px;
     }
     
-    .post video {
-    width: 612px;
-    height: 612px;
-    }
     
     .top {
     height: 50px;
@@ -220,6 +216,8 @@ body {
     
     .interact ion-icon {
     font-size: 18px;
+    visibility: visible;
+    cursor:pointer;
     }
     
     .interact a:hover {
@@ -352,7 +350,16 @@ body {
     
     .acc-info div {
     margin-left: 16px;
+    display:flex;
+    gap:5px;
+    align-items: center;
     }
+
+    .acc-info div ion-icon{
+        font-size: 14px;
+        padding-bottom:6px;
+        cursor:pointer;
+        }
     
     a {
     text-decoration: none;
@@ -376,6 +383,7 @@ body {
     width: 56px;
     height: 56px;
     border-radius: 28px;
+    cursor:pointer;
     }
     
     .for-you {
@@ -405,6 +413,7 @@ body {
     
     .sug-profile img {
     margin-right: 10px;
+    cursor: pointer;
     }
     
     .follow {

@@ -1,8 +1,7 @@
-import Img from "./Img";
-import Desc from "./PostDescription";
-import PostHeader from "./PostHeader";
+import IndividualPost from "./IndividualPost";
 
 export default function Post(){
+
     const users = [
         {name: "vickeeymakeup",
         icon: "./assets/img/vickeey.jpg",
@@ -31,15 +30,9 @@ export default function Post(){
     }
     ]
 
-    const post = users.map((post) =>
-    <div data-test="post" class="post">
-        <PostHeader name={post.name} image={post.icon}/>
-        <Img image={post.image}/>
-        <Desc liked={post.likedBy} likes={post.likes} icon={post.iconLiked} user={post.name} desc={post.desc}/>
-    </div>
-    )
-
     return (
-        post
+        users.map((post) => <IndividualPost image={post.icon} name={post.name} liked={post.likedBy} likes={post.likes} 
+        desc={post.desc} postImage={post.image} icon={post.iconLiked}/>
+        )
     )
 }
