@@ -157,7 +157,7 @@ main {
     position:relative;
 }
     
-.post img {
+.post-img {
     width: 612px;
     height: 612px;
 }
@@ -486,7 +486,7 @@ a {
         border-right: none;
     }
 
-    .post img:nth-child(2) {
+    .post-img{
         width: 100%;
         height: auto;
     }
