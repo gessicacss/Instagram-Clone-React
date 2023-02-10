@@ -37,7 +37,7 @@ export default function IndividualPost(props){
             </div>
             <div class="description">
                 <img src={props.icon} alt={props.liked}/>
-                <p>Curtido por <span><a href="#">{props.liked}</a></span> e <span>outras <span data-test="likes-number">{props.likes} </span>pessoas</span></p>
+                <p>Curtido por <span><a href="#">{props.liked}</a></span> e <span>outras <span data-test="likes-number">{!like ? props.likes : props.likes + 1} </span>pessoas</span></p>
             </div>
             <div class="desc">
                 <p><span><a href='#'>{props.name}</a></span> {props.desc}</p>
