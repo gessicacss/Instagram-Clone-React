@@ -24,7 +24,6 @@ export default function IndividualPost(props){
             }, halfASecond);
         }
 
-
         return(
             <RenderPost likeImg={likeImg} likePost={likePost} savePost={savePost} image={image} name={name} postImage={postImage} icon={icon} liked={liked} likes={likes} desc={desc} like={like} setLike={setLike} save={save} setSave={setSave} showHeart={showHeart}/>
         );
