@@ -19,7 +19,7 @@ export default function User(){
 
     return (
         <div class="acc-info"> 
-        <img data-test="profile-image" src={newImg ? newImg : oldImg} onClick={changeIcon}/>
+        <img data-test="profile-image" src={newImg ? newImg : oldImg} onClick={changeIcon} alt={oldImg}/>
         <div>
             <h1 data-test="name">{!userName ? oldUserName : userName}</h1>
             <ion-icon data-test="edit-name" name="pencil" onClick={() => changeName()}></ion-icon>
