@@ -162,7 +162,7 @@ main {
     height: 612px;
 }
     
-#img-like {
+.img-like {
         position:absolute;
         top: 20%;
         right:25%;
@@ -184,7 +184,7 @@ main {
         }
 }
 
-#hide {
+.hide {
         display:none;
 }
     
@@ -255,7 +255,7 @@ main {
     color: black;
 }
     
-#liked {
+.liked {
     color: red;
 }
     

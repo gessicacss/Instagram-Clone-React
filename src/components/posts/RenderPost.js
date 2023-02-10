@@ -9,12 +9,12 @@ export default function RenderPost(props){
                 </div>
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
-            <ion-icon onClick={likeImg} id={showHeart ? "img-like" : "hide"} name={"heart"}></ion-icon>
+            <ion-icon onClick={likeImg} class={showHeart ? "img-like" : "hide"} name={"heart"}></ion-icon>
             <img data-test="post-image" onDoubleClick={likeImg} src={postImage} alt={name}/>
             <div className="bottom">
             <div className="interact">
                 <div>
-                        <ion-icon data-test="like-post" onClick={likePost}  id={like ? "liked" : "not-liked"} name={like ? "heart" : "heart-outline"}></ion-icon>
+                        <ion-icon data-test="like-post" onClick={likePost}  class={like ? "liked" : "not-liked"} name={like ? "heart" : "heart-outline"}></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
