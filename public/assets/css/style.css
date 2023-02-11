@@ -157,7 +157,7 @@ main {
     position:relative;
 }
     
-.post-img {
+.post img {
     width: 612px;
     height: 612px;
 }
@@ -212,7 +212,7 @@ main {
     line-height: 16px;
 }
     
-.top img {
+.account img {
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -486,7 +486,7 @@ a {
         border-right: none;
     }
 
-    .post-img{
+    .post img:nth-child(3){
         width: 100%;
         height: auto;
     }
